@@ -1,0 +1,9 @@
+#include "wclock.ceu"
+#include "oled.ceu"
+
+_Serial.begin(9600);
+
+await Oled(on,{SSD1306_SWITCHCAPVCC},_,false,4);
+await Oled_display();
+
+await FOREVER;
